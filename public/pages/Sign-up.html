@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+</head>
+<body>
+
+  
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <b> <a class="navbar-brand" href="../index.html"><i class="fas fa-arrow-left"></i></i></a> </b>
+       <br>
+    <b>   <a class="navbar-brand" href="../index.html"><b> O|X </b></a> </b>
+      </nav>   
+      
+    
+    <hr>
+    
+
+    <div class="container jumbotron"  style="text-align:center">
+        <!-- <h1>SIGN IN</h1> -->
+        <!-- <br> <br> -->
+        <!-- <div class="form-group">
+       <input type="email" placeholder="Email" class="form-control">  <br> <br>
+       <input type="password" placeholder="Password" class="form-control"> <br> 
+       <button class="btn btn-success" style="float:left">Sign In</button>
+       <button style="float:right"  class="btn btn-danger">Sign Up</button>
+    </div> -->
+    <!-- <br> <br> -->
+    <!-- <h4>---------- or ----------</h4> <br> -->
+        <!-- <button>Continue with Google</button> <br> <br> -->
+        <!-- <button>Continue with Phone</button> <br> <br> -->
+        <button class="btn btn-primary  " onclick="facebookAuth()">   <i class="fab fa-facebook-f"></i>     Continue with Facebook</button>
+        <!-- <button class="btn btn-danger  ">   <i class="fab fa-google"></i>     Continue with Google</button> <br> <br> -->
+        <!-- <button>Continue with Email</button> <br> <br> -->
+    
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDMo2h9PZofSb3lDOqqqvOs38sTVa1kQII",
+    authDomain: "olxx-ada5d.firebaseapp.com",
+    databaseURL: "https://olxx-ada5d.firebaseio.com",
+    projectId: "olxx-ada5d",
+    storageBucket: "olxx-ada5d.appspot.com",
+    messagingSenderId: "346366226024"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="../js/fb-auth.js"></script>
+</body>
+</html>

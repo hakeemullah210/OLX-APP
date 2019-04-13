@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>OLX</title>
+
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../css/style.css">
+
+  <link rel="manifest" href="../manifest.webmanifest">
+  
+
+</head>
+
+<body onload="renderBikes()">
+  <div >
+  <!-- <div  class="jumbotron">
+        <h1 id="logo">OlX</h1>
+        <input type="text" placeholder="Location" id="location">
+        <input type="text" placeholder="Find Cars, Mobile Phones and more..." id="searchBar">
+
+        <button>LOGIN</button>
+        <button>SELL</button>
+       -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <b> <a class="navbar-brand" href="../index.html"><b> O|X </b></a> </b>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    < a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+              </ul> -->
+      <!-- <span>
+                    <p id="displayName"></p>
+              </span> -->
+
+      <!-- <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="location" aria-label="Search"> -->
+        <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+      <!-- </form> -->
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Find Cars, Mobile Phones and more..." id="searchtxt" onkeyup="searchFunc()" aria-label="Search" >
+        <!-- <button class="btn btn-outline-primary my-2 my-sm-0"  type="submit" class="fas fa-search" onclick="searchText()"><i class="fas fa-search" ></i></button> -->
+        
+      
+      
+        <!-- <button class="glyphicon glyphicon-search">search</button> -->
+
+      </form>
+      <form action="" class="form-inline my-2 my-lg-0">
+        <!-- <button class="btn btn-outline-primary my-2 my-sm-0" >LOGIN</button> -->
+        <a href="./Sign-up.html">LOGIN</a>
+
+
+      </form>
+      <!-- Shows name who is login -->
+<!-- 
+      <span>
+          <p id="displayName"></p>
+        </span> -->
+        <!-- <span id="photoURL"></span> -->
+        
+        
+      <form action="" class="form-inline my-2 my-lg-0 " >
+        <!-- <button class="btn btn-primary my-2 my-sm-0" onclick='submitAd()'>SELL</button> -->
+        <a href="./submit-ad.html" class="btn btn-primary my-2 my-sm-0 float-right"  >SELL</a>
+      </form>
+
+      
+<!-- 
+      <form action="">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Seadnknkrch" name="search">
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+            
+          </div>
+        </div>
+      </form> -->
+    
+
+
+    </div>
+  </nav>
+  </div>
+  </div>
+  
+</div>
+<hr>
+
+
+<div class="container">
+
+    <!-- <div class="input-group"> -->
+        <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> -->
+        <!-- <select class="form-control" name="" id="type">
+            <option value="null" selected disabled>Categories</option>
+            <option value="Donor">Properties</option>
+            <option value="Acceptor">Cars</option>
+            <option value="Acceptor">Mobiles</option>
+            <option value="Acceptor">Electronic Appliances</option>
+            
+        </select>
+    </div>	 --> 
+   <div class="dropdown">
+    <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
+      BROWSE BY CATEGORY
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="./bikes.html">Bikes</a>
+      <a class="dropdown-item" href="./cars.html">Cars</a>
+      <a class="dropdown-item" href="./mobile.html">Mobiles</a>
+      <a class="dropdown-item" href="./electronic.html">Electronic & Appliances</a>
+    </div> 
+  
+  </div>
+  <hr>
+<div  >
+  <img src="../img/BPL_PC_TV_banner.jpg" alt="" class="img-fluid">
+  <!-- <img src="./img/buy-store-video-animation_njsvuwz-x__F0005.png"   class="img-fluid" alt=""> -->
+</div>
+<br>
+
+<div class="container">
+  <h3>Popular Categories</h3> <hr>
+  <div id="category">
+      
+
+        
+
+
+     
+
+             
+      
+  </div>
+
+</div>
+
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
+<script>
+  // ------------code for service worker-------
+  
+//   if('serviceWorker' in navigator){
+//       navigator.serviceWorker.register('../sw.js')
+//       .then(res=>{
+//           console.log('SW Registered hogya');
+//       })
+//       .catch(err=>{
+//           console.log('Error in Registering SW',err);
+//       })
+//   }
+//   else{
+//       console.log('SW not supported');
+//   }
+
+// </script> 
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDMo2h9PZofSb3lDOqqqvOs38sTVa1kQII",
+      authDomain: "olxx-ada5d.firebaseapp.com",
+      databaseURL: "https://olxx-ada5d.firebaseio.com",
+      projectId: "olxx-ada5d",
+      storageBucket: "olxx-ada5d.appspot.com",
+      messagingSenderId: "346366226024"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="../js/fb-auth.js"></script>
+  <!-- <script src="./js/app.js"></script> -->
+  <!-- <script src="../js/render-ad.js"></script> -->
+  <!-- <script src="./js/search-ad.js"></script> -->
+  <script src="../js/category-ad.js"></script>
+
+
+  
+</body>
+
+</html>
